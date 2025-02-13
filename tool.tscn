@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddyrdubsptb1f"]
+
+[ext_resource type="Script" path="res://tool.gd" id="1_dhfis"]
+[ext_resource type="FontFile" uid="uid://bo2nhofim3njl" path="res://PixeletterBold.ttf" id="2_al4i0"]
+
+[sub_resource type="Theme" id="Theme_qrsjv"]
+default_font = ExtResource("2_al4i0")
+
+[node name="tool" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_dhfis")
+
+[node name="drop_file" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 8.0
+anchor_bottom = 4.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_qrsjv")
+text = "Drag and drop your skin.ini"
+horizontal_alignment = 1
+vertical_alignment = 1
